@@ -1,12 +1,22 @@
-<%- include Partials/header.ejs %>
-<%- include Partials/main_nav.ejs %>
-  <!--Content For Page-->
-<main>
-  <div class="jumbotron jumbotron-fluid">
+<%- include('partials/header') %>
+<%- include('partials/main_nav') %>
+
+<!-- Home Section -->
+<section id="home" class="py-5">
     <div class="container">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+        <div class="greeting text-center mb-4">
+            <h1 class="display-4">Welcome to Ritik's Portfolio!</h1>
+        </div>  
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="/Assets/ritik.jpg" alt="Ritik Gautam" class="profile-photo img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <p class="lead">Welcome! I’m Ritik, and I’m passionate about harnessing technology to solve problems and create innovative solutions. Explore my journey and join me on this exciting adventure!</p>
+                <a href="/about" class="btn btn-primary mt-3">Learn More About Me >>> </a>
+            </div>
+        </div>
     </div>
-  </div>
-</main>
-<%- include Partials/footer_bottom_nav.ejs %>
-<%- include Partials/footer.ejs %>
+</section>
+
+<%- include('partials/footer') %>

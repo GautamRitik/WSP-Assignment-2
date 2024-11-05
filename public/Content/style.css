@@ -1,0 +1,192 @@
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F1F1F; /* Dark background */
+    color: #D3D9D4; /* Light grey text */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Greeting Section */
+.greeting {
+    text-align: center;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 150px; /* Set width for rectangle */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 35px; /* Rounded corners */
+    margin-right: 20px; /* Space between image and text */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.short-intro {
+    max-width: 400px;
+}
+
+.button-container {
+    margin-top: 30px; /* Space above the container */
+}
+
+/* Home Button Styles */
+.learn-more-btn {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 20px; /* Padding around the button */
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(to right, #2E6F40 50%, #245a30 50%);
+    background-size: 200%; /* Background size */
+    background-position: right;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    border-radius: 35px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    transition: all 0.5s ease-out;
+    display: inline-block; /* Ensure the button fits its content */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.learn-more-btn:hover {
+    color: #FFF;
+    background-position: left;
+}
+
+/* About Section Styles */
+#about {
+    display: flex; /* Flexbox for aligning image and text */
+    align-items: flex-start; /* Align items to the start */
+    flex-wrap: wrap; /* Allow wrapping */
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    padding: 45px;
+}
+
+#about h2 {
+    width: 100%; /* Full width */
+    text-align: left;
+    color: #E0E0E0;
+}
+
+.intro-text {
+    flex: 1; /* Allow the text to take available space */
+    background-color: #252525; /* Dark background */
+    align-items: center;
+    border-radius: 35px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 0; /* Reset margin to avoid shifting */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Centered Video Styles */
+.video-container {
+    display: flex; /* Use flexbox to center the video */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 25px; /* Padding around the video */
+    width: 100%; /* Full width for centering */
+}
+
+.video-container video {
+    max-width: 100%; /* Make it responsive */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    border-radius: 35px; /* Rounded corners */
+}
+
+/* Cool Slide-in Animation for Project Section */
+.project-slide {
+    opacity: 0; /* Start as invisible */
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transition for opacity and position */
+}
+
+.project-slide.loaded {
+    opacity: 1; /* Make it visible */
+    transform: translateX(0); /* Move to its original position */
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 20px;
+}
+
+#contact form {
+    display: flex; /* Flexbox for aligning form elements */
+    flex-direction: column;
+}
+
+#contact label {
+    margin: 10px 0 5px; /* Space between labels */
+}
+
+#contact input,
+#contact textarea {
+    border-radius: 8px;
+    padding: 10px;
+    border: 3px solid #3C8B4A; /* Green border */
+    margin-bottom: 10px; /* Space between input fields */
+}
+
+#contact button {
+    margin-top: 30px;
+    background-color: #252525;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #3C8B4A;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center text */
+    padding: 15px 20px; /* Padding for spacing */
+    background-color: #252525; /* Footer background */
+    border-radius: 35px; /* Rounded corners */
+    margin-top: 20px; /* Space between content and footer */
+    color: #ffffff; /* Text color */
+}
+
+footer a {
+    color: #2E6F40; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 20px; /* Icon size */
+}
+
+footer a:hover {
+    color: #FFF; /* Change color on hover */
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #1F1F1F, #3C8B4A); /* Fluid linear gradient */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #252525; /* Adds space between the thumb and the track */
+}
+
+::-webkit-scrollbar-track {
+    background: #252525; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
