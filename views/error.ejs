@@ -1,10 +1,10 @@
-<%- include Partials/header.ejs %>
-<%- include Partials/main_nav.ejs %>
+<%- include('partials/header') %>
+<%- include('partials/main_nav') %>
 
-<div class="container">
-    <h1><%= message %></h1>
-    <h2><%= error.status %></h2>
-    <pre><%= error.stack %></pre>
+<div class="container mt-5 text-center">
+    <h1><%= message || 'Oops! Page Not Found' %></h1>
+    <h2>Error Code: 404</h2>
+    <p>It looks like the page you're looking for doesn't exist. Please use the navigation bar to go to a valid page.</p>
 </div>
 
-<%- include Partials/footer.ejs %>
+<%- include('partials/footer') %>
