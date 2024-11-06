@@ -1,17 +1,10 @@
-<%- include('partials/header') %>
-<%- include('partials/main_nav') %>
+<%- include Partials/header.ejs %>
+<%- include Partials/main_nav.ejs %>
 
 <div class="container">
-    <h1><%= message || 'An error occurred' %></h1>
-    <% if (error && error.status) { %>
-        <h2>Error Code: <%= error.status %></h2>
-    <% } else { %>
-        <h2>Error Code: Unknown</h2>
-    <% } %>
-    <% if (error && error.stack) { %>
-        <pre><%= error.stack %></pre>
-    <% } %>
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <pre><%= error.stack %></pre>
 </div>
 
-<%- include('partials/footer') %>
-<!-- The error.ejs file is a view that displays an error message and error code when an error occurs. The error message is passed as a variable from the server-side code, and the error code is extracted from the error object. If the error object contains a stack trace, it is also displayed in a preformatted block. The error.ejs file includes the header and main navigation partials to maintain consistency with the rest of the application's layout. -->
+<%- include Partials/footer.ejs %>
