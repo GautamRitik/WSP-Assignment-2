@@ -2,36 +2,35 @@
 <%- include('partials/main_nav') %>
 
 <!-- Projects Section -->
-<section id="projects" class="py-5">
-    <div class="container">
-        <h2 class="display-5 text-center mb-4">My Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Weather Website using OpenWeather API</h5>
-                        <p class="card-text">Weather website that displays the current weather and forecast for the next 7 days using the OpenWeather API.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Java Snakes & Ladders Game</h5>
-                        <p class="card-text">Java implementation of the classic Snakes & Ladders game with a text-based GUI.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Personal Portfolio Website</h5>
-                        <p class="card-text">My personal portfolio website showcasing my projects, skills, and contact information.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section id="projects">
+  <div class="container">
+      <h2>My Projects</h2>
+      <article class="project-slide">
+          <h3>Weather Website using OpenWeather API</h3>
+          <p>Weather website that displays the current weather and forecast for the next 7 days using the OpenWeather API.</p>
+      </article>
+      <article class="project-slide">
+          <h3>Java Snakes & Ladders Game</h3>
+          <p>Java implementation of the classic Snakes & Ladders game with a text-based GUI.</p>
+      </article>
+      <article class="project-slide">
+          <h3>Personal Portfolio Website</h3>
+          <p>My personal portfolio website showcasing my projects, skills, and contact information.</p>
+      </article>
+  </div>
 </section>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        const projectArticles = document.querySelectorAll(".project-slide");
+
+        projectArticles.forEach((article,index) => {
+            setTimeout(() => {
+                article.classList.add("loaded");
+            }, 750 * index);
+        });
+    });
+</script>
 
 <%- include('partials/footer') %>

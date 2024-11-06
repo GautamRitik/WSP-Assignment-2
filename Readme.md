@@ -66,7 +66,8 @@ This website serves as a personal portfolio to highlight my projects, skills, an
 - **Bootstrap**: For providing a responsive framework.
 - **FontAwesome**: For icons.
 - **Express Generator**: Used to scaffold the initial structure of the app.
+- **Bootstrap Navigation Bar**: Navigation bar design inspired by examples from the official [Bootstrap documentation](https://getbootstrap.com/docs/5.1/components/navbar/).
+- **Render**: For hosting the website on their cloud platform. Visit the deployed website [here](https://wsp-assignment-2-portfolio.onrender.com/).
 
 ## Contact
 For any inquiries, please contact me at [ritikgautam1102@gmail.com](mailto:ritikgautam1102@gmail.com) or visit my [LinkedIn](https://ca.linkedin.com/in/ritik-gautam-aa6690252).
-
