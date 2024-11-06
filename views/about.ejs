@@ -1,12 +1,25 @@
-<%- include Partials/header.ejs %>
-<%- include Partials/main_nav.ejs %>
-  <!--Content For Page-->
-<main>
-  <div class="jumbotron jumbotron-fluid">
+<%- include('partials/header') %>
+<%- include('partials/main_nav') %>
+
+<!-- About Section -->
+<section id="about" class="py-5">
     <div class="container">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+        <h2 class="display-5 text-center mb-4">About Me</h2>
+        <div class="about-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Hi, I'm Ritik, a passionate IT student eager to explore the world of technology and enhance my skills. With a keen interest in programming and problem-solving, I am dedicated to learning about the latest advancements in the tech industry. My journey in IT has fueled my curiosity and drive to innovate, and I look forward to collaborating with like-minded individuals to create impactful solutions. Whether it's through hands-on projects or engaging with new technologies, I am excited to embrace every opportunity for growth and development in this dynamic field.</p>
+                </div>
+            </div>
+            <!-- Centered Intro Video -->
+            <div class="video-container mt-4">
+                <video controls autoplay muted poster="/Assets/video-poster.jpg" class="intro-video w-100 rounded">
+                    <source src="/Assets/intro-videos.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
     </div>
-  </div>
-</main>
-<%- include Partials/footer_bottom_nav.ejs %>
-<%- include Partials/footer.ejs %>
+</section>
+
+<%- include('partials/footer') %>

@@ -5,14 +5,24 @@ body {
     color: #D3D9D4; /* Light grey text */
     margin: 0;
     padding: 20px;
+
 }
 
-/* Greeting Section */
+
+/* Navbar Brand Logo Styles */
+.nav-logo {
+    width: 70px; /* Set the logo size */
+    height: 70px; /* Set the logo size */
+    border-radius: 50%; /* Make the logo a circle */
+    border: 3px solid #3C8B4A; /* Green border */
+}
+
+/* Home Section Greeting */
 .greeting {
     text-align: center;
 }
 
-/* Profile Section */
+/* Profile Container for Image and Introduction */
 .profile-container {
     display: flex;
     align-items: center;
@@ -32,9 +42,37 @@ body {
     max-width: 400px;
 }
 
+/* Button Container for Home Section */
 .button-container {
     margin-top: 30px; /* Space above the container */
 }
+
+.btn-primary {
+    position: relative;
+    margin-top: 20px;
+    padding: 10px 20px; /* Padding around the button */
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #1F1F1F, #3C8B4A);
+    background-size: 200%; /* Background size */
+    background-position: right;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    border-radius: 35px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    transition: all 0.5s ease-out;
+    display: inline-block; /* Ensure the button fits its content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    outline: none; /* Remove focus outline */
+    box-shadow: none; /* Remove blue border which might be a box shadow */
+}
+
+
+.btn-primary:hover {
+    background-position: left;
+    color: #FFF;
+}
+
 
 /* Home Button Styles */
 .learn-more-btn {
@@ -43,7 +81,7 @@ body {
     padding: 10px 20px; /* Padding around the button */
     font-size: 16px;
     font-weight: bold;
-    background: linear-gradient(to right, #2E6F40 50%, #245a30 50%);
+    background: linear-gradient(45deg, #1F1F1F, #3C8B4A);
     background-size: 200%; /* Background size */
     background-position: right;
     color: white;
@@ -55,10 +93,12 @@ body {
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
+/* Hover Effect */
 .learn-more-btn:hover {
     color: #FFF;
     background-position: left;
 }
+
 
 /* About Section Styles */
 #about {
@@ -87,7 +127,7 @@ body {
     border-radius: 35px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
     margin: 0; /* Reset margin to avoid shifting */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Centered Video Styles */
@@ -102,11 +142,10 @@ body {
 .video-container video {
     max-width: 100%; /* Make it responsive */
     height: auto; /* Maintain aspect ratio */
-    width: 100%;
     border-radius: 35px; /* Rounded corners */
 }
 
-/* Cool Slide-in Animation for Project Section */
+/* Cool Slide in Animation for Project Items */
 .project-slide {
     opacity: 0; /* Start as invisible */
     transform: translateX(-100%); /* Start off-screen to the left */

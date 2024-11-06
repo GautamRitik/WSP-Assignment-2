@@ -1,0 +1,16 @@
+/* fluid.css */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-size: 2rem; /* Fluid font sizes */
+}
+
+nav {
+    background: linear-gradient(to right, #1F1F1F, #3C8B4A); /* Fluid linear gradient */
+    border-radius: 35px; /* Rounded corners */
+}
+

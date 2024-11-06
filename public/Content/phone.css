@@ -1,0 +1,126 @@
+/* Base Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Allow positioning of child elements */
+}
+
+/* Ensure nav-links are hidden on small screens by default */
+.nav-links {
+    display: none; /* Hidden initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Position below the navbar */
+    right: 0;
+    width: 200px; /* Set width for mobile dropdown */
+    border-radius: 35px; /* Rounded corners */
+    padding: 20px; /* Space inside the links box */
+    z-index: 9;
+}
+
+/* Style the unordered list in nav-links */
+.nav-links ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Link Styles */
+.nav-links li {
+    margin: 15px 0; /* Space between links */
+    text-align: center; /* Center align text */
+}
+
+.nav-links li a {
+    text-decoration: none; /* No underline */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hamburger Menu Styling for Mobile View */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer; /* Pointer on hover */
+    justify-content: center; /* Center hamburger vertically */
+    padding: 10px; /* Padding around hamburger */
+    position: absolute;
+    right: 10px; /* Right-aligned */
+    top: 20px; /* Spacing from the top */
+    z-index: 10; /* Ensure it's above other content */
+}
+
+/* Hamburger Lines */
+.hamburger-menu .line {
+    width: 30px; /* Width of hamburger lines */
+    height: 3px; /* Height of hamburger lines */
+    background-color: white; /* White lines */
+    margin: 5px; /* Space between lines */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* When the nav-links are active, show them */
+.nav-links.active {
+    display: flex; /* Show links when active */
+}
+.hamburger-menu {
+    display: flex; /* Show hamburger menu on small screens */
+}
+
+.nav-links {
+    display: none; /* Ensure display is controlled by the active class */
+}
+
+.nav-links.active {
+    display: flex; /* Show links when nav is active */
+}
+
+.nav-links ul {
+    display: flex; /* Display links as flex for mobile view */
+    flex-direction: column; /* Stack the nav items vertically */
+    position: absolute; /* Overlay position */
+    top: 60px; /* Position below the header */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    background-color: #333; /* Dark background */
+    border-radius: 35px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.nav-links li {
+    text-align: center; /* Center align links */
+    margin: 20px 0; /* Space between links */
+}
+    
+
+.button-container {
+    text-align: center; /* Center the button text */
+    margin-top: 20px; /* Space above the container */
+}
+
+.container {
+    text-align: center;
+
+}
+
+.intro-text {
+    font-size: 14px;
+    padding: 20px; /* Padding inside the box */
+    margin: 0; /* Reset margin to avoid shifting */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+
+}
+
+
+#about h2 {
+    text-align: center;
+
+}
+.about-container {
+   text-align: center;
+}
+
+footer a {
+    font-size: 16px; /* Icon size */
+}

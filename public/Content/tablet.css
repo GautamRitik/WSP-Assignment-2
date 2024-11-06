@@ -1,0 +1,12 @@
+/* Tablet Styles */
+body {
+    font-size: 16px; /* Medium font size */
+}
+
+.profile-photo {
+    width: 50%; /* Half width */
+}
+
+.intro-text {
+    padding: 15px; /* Adjust padding */
+}

@@ -1,12 +1,37 @@
-<%- include Partials/header.ejs %>
-<%- include Partials/main_nav.ejs %>
-  <!--Content For Page-->
-<main>
-  <div class="jumbotron jumbotron-fluid">
+<%- include('partials/header') %>
+<%- include('partials/main_nav') %>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
     <div class="container">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+        <h2 class="display-5 text-center mb-4">My Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Website using OpenWeather API</h5>
+                        <p class="card-text">Weather website that displays the current weather and forecast for the next 7 days using the OpenWeather API.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Java Snakes & Ladders Game</h5>
+                        <p class="card-text">Java implementation of the classic Snakes & Ladders game with a text-based GUI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Portfolio Website</h5>
+                        <p class="card-text">My personal portfolio website showcasing my projects, skills, and contact information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</main>
-<%- include Partials/footer_bottom_nav.ejs %>
-<%- include Partials/footer.ejs %>
+</section>
+
+<%- include('partials/footer') %>

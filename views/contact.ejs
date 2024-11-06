@@ -1,12 +1,41 @@
-<%- include Partials/header.ejs %>
-<%- include Partials/main_nav.ejs %>
-  <!--Content For Page-->
-<main>
-  <div class="jumbotron jumbotron-fluid">
+<%- include('partials/header') %>
+<%- include('partials/main_nav') %>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5">
     <div class="container">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
+        <h2 class="display-5 text-center mb-4">Contact Me</h2>
+        <form action="mailto:ritikgautam1102@gmail.com" method="post" enctype="text/plain">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" list="email-domains" placeholder="Your Email Address" required>
+                <datalist id="email-domains">
+                    <option value="@gmail.com">
+                    <option value="@icloud.com">
+                    <option value="@yahoo.com">
+                    <option value="@outlook.com">
+                    <option value="@hotmail.com">
+                </datalist>
+            </div>
+
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone Number" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
     </div>
-  </div>
-</main>
-<%- include Partials/footer_bottom_nav.ejs %>
-<%- include Partials/footer.ejs %>
+</section>
+
+<%- include('partials/footer') %>
